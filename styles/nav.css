@@ -1,0 +1,125 @@
+/***** The following CSS applies to the Navigation *****/
+/*** Top-right Nav: #nav ***/
+
+#nav ul {
+	list-style-type: none;
+	
+	float: right;
+	height: 70px;
+	
+	margin: 9px 0px 0px 0px;
+	padding: 0px;
+}
+
+#nav ul li {
+	display: inline-block;
+	float: left;
+	
+	padding-left: 15px;
+}
+
+#nav ul li a {
+	display: inline-block;
+	font-size: 20px;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	
+	padding: 5px;
+	
+	border: #eee solid 3px;
+	
+	-webkit-transition-property: background, border, color;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-property: background, border, color;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease-in-out;
+	-o-transition-property: background, border, color;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease-in-out;
+}
+
+#nav ul li a:link, #nav ul li a:hover, #nav ul li a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+#nav ul li:hover > a{
+	border: rgba(179, 27, 27, 1) solid 3px;
+}
+
+
+/*** Left-nav: #left-nav ***/
+
+#left-nav #current-projects, #left-nav #completed-projects, #left-nav a {
+	font: 14px "Book Antiqua";
+	word-wrap: break-word;
+}
+
+#current-projects a, #completed-projects a, #left-nav a {
+	display: block;
+	color: #555;
+	text-decoration: none;
+	
+	margin: 5px 10px;
+	padding-left: 10px;
+}
+
+#current-projects a:hover, #completed-projects a:hover, #left-nav a:hover {
+	background-image: url('../images/left-nav-bar.png');
+	background-repeat: repeat-y;
+}
+
+#left-nav ul li {
+	word-wrap: break-word;
+	
+	font-size: 14px;
+	
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+/* 
+#left-nav a {
+	float: left;
+	display: block;
+	
+	width: 116px;
+	
+	z-index: 99999;
+	
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 23px;
+	
+	margin: 20px 0px 0px 10px;
+	padding: 5px 15px;
+	
+	border-top-left-radius: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 0px;
+
+	color: rgba(255,255,255,1);
+	background: rgba(179, 27, 27, 1);
+	border: rgba(179, 27, 27, .5) solid 2px;
+	
+	-webkit-transition-property: background, border, color;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transition-property: background, border, color;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease-in-out;
+	-o-transition-property: background, border, color;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease-in-out;
+}
+
+#left-nav a:hover {
+	background: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 1);
+	
+	border: rgba(0, 0, 0, .5) solid 2px;
+	border-right: rgba(255, 255, 255, 1) solid 2px;
+} */
+

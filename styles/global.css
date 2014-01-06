@@ -1,0 +1,317 @@
+/***** The following CSS applies globally, to all pages *****/
+@font-face {
+	font-family: Edwardian Script;
+	src: url("../fonts/ITCEDSCR.ttf") format("truetype");
+	
+	font-family: Book Antiqua;
+	src: url("../fonts/BKANT.ttf") format("truetype");
+}
+
+/*** Layout ***/
+#everything {	
+	width: 1000px;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+#left-wrap {
+	background-image: url('../images/left-wrap.png');
+	background-repeat: repeat-y;
+	
+	width: 180px;
+	min-height: 643px;
+	
+	position: fixed;
+	top: 0px;
+	
+	margin: 0px;
+	padding: 0px;
+	
+	z-index: 999;
+ }
+ 
+	.banner {
+		height: 150px;
+		width: 180px;
+		
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#left-nav {
+		clear: both;
+		
+		margin: 0px;
+		padding: 10px 20px;
+	 }
+
+ #right-wrap {
+	float: right;
+	min-height: 100%;
+	width: 820px;
+ }
+ 
+	#fixed-wrap {
+		position:fixed;
+		top: 0px;
+		
+		background-color: #eee;
+		
+		z-index: 999;
+	}
+ 
+		#title-nav-wrap {
+			min-height: 80px;
+			top: 0px;
+		}
+		
+			#title {
+				font-family: 'Book Antiqua', Arial;
+				float: left;
+				
+				font-size: 60px;
+				margin-top: 5px;
+				margin-left: 20px;
+				display: inline-block;
+			}
+			
+			#nav {
+				float: right;
+				
+				
+				height: 70px;
+				line-height: 50px;
+				
+				font-family: 'brandon-grotesque', Arial, sans-serif;
+				letter-spacing: 1px;
+				
+				padding: 0px;
+				margin: 0px;
+			}
+
+		#small-title-wrap {
+			clear: both;
+			min-height: 65px;
+			
+			font-size: 20px;
+			line-height: 65px;
+			
+			margin-left: 20px;
+		}
+		
+			#e-mail {
+				display: inline-block;
+				float: right;
+			}
+			
+			#social-media {
+				display: inline-block;
+				float: left;
+				max-height: 65px;
+				width: 345px;
+			}
+			
+			#social-media:hover > #facebook {
+				border: #777 solid 2px;
+				background: rgba(179, 193, 225, 1);				
+			}
+			
+			#social-media:hover > #twitter {
+				border: #777 solid 2px;
+				background: rgba(194, 222, 239, 1);
+			}
+			
+				#facebook {
+					display: inline-block;
+					text-decoration: none;
+					line-height: 40px;
+					
+					background: #eee; /* rgba(75,103,161,1);*/
+					border: #ddd solid 2px;
+					color: #555;
+					
+					margin-right: 10px;
+					padding: 0px 15px;
+					
+					border-radius: 0px;
+					
+					-webkit-transition-property: background, border, color;
+					-webkit-transition-duration: .3s;
+					-webkit-transition-timing-function: ease-in-out;
+					-moz-transition-property: background, border, color;
+					-moz-transition-duration: .3s;
+					-moz-transition-timing-function: ease-in-out;
+					-o-transition-property: background, border, color;
+					-o-transition-duration: .3s;
+					-o-transition-timing-function: ease-in-out;
+				}
+				
+				#social-media:hover #facebook:hover {
+					background: rgba(59, 89, 152, 1);				
+					border: rgba(31, 65, 137, 1)solid 2px;
+					color: #fff;
+				}
+				
+				#twitter {
+					display: inline-block;
+					text-decoration: none;
+					line-height: 40px;
+					
+					background: #eee; /* rgba(75,103,161,1);*/
+					border: #ddd solid 2px;
+					color: #555;
+					
+					margin: 0px;
+					padding: 0px 15px;
+					
+					border-radius: 0px;
+					
+					-webkit-transition-property: background, border, color;
+					-webkit-transition-duration: .3s;
+					-webkit-transition-timing-function: ease-in-out;
+					-moz-transition-property: background, border, color;
+					-moz-transition-duration: .3s;
+					-moz-transition-timing-function: ease-in-out;
+					-o-transition-property: background, border, color;
+					-o-transition-duration: .3s;
+					-o-transition-timing-function: ease-in-out;
+				}
+				
+				#social-media:hover #twitter:hover {
+					background: rgba(140, 202, 239, 1);				
+					border: rgba(80, 161, 211, 1) solid 2px;
+					color: #fff;
+				}
+		
+		.border {
+		clear: both;
+		border-top: solid 5px #B31B1B;
+		
+		width: 820px;
+		
+		margin: 0px auto;
+		padding: 0px;
+		
+		box-shadow: 1px 1px 4px rgba(179, 27, 27, 0);
+		-webkit-box-shadow: 1px 1px 4px rgba(179, 27, 27, 0);
+		-moz-box-shadow: 1px 1px 4px rgba(179, 27, 27, 0);
+		}
+	
+	#main-content {
+		position: relative;
+		top: 150px;
+		
+		background-color: #fff;
+		
+		font: 12px Book Antiqua, Geneva, sans-serif;
+		overflow: auto;
+		
+		width: 780px;
+		height: 493px;
+		
+		margin: 0px;
+		padding: 0px 20px;
+	}
+  
+ #copyright {
+	position: fixed;
+	right: 50px;
+	bottom: 10px;
+	font-size: 11px;
+ }
+
+/* Beg. Styling */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #eee;
+	color: #000000;
+	font-family: Book Antiqua, Arial, sans-serif;
+	font-size: 12px;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link {
+	color: rgba(179, 27, 27, 1);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgba(179, 27, 27, 1);
+	text-decoration: underline;
+}
+
+a:hover {
+	color: rgba(179, 27, 27, 1);
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+	font-family: Book Antiqua, Arial, sans-serif;
+	font-weight: normal;
+	margin: 10px 0px;
+}
+
+p {
+	font: 16px Book Antiqua, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+#about {
+	width: 800px;
+	height: 100px;
+}
+
+.aboutme {
+	font-size: 16px;
+	line-height: 75px;
+}
+
+#and {
+	font-family: Book Antiqua;
+	float: left;
+	font-size: 60px;
+	width: 50px;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.float-right {
+	float: right;
+}
+
+#quotes {
+	position: static;
+	display: inline;
+	float: left;
+	width: 800px;
+	
+	overflow: hidden;
+	
+	margin-left: 10px;
+}
+
+/*** Images IDs ***/
+
+#yu-logo {
+	height: 150px;
+	width: 180px;
+}
+
+#portrait {
+	float: left;
+	border: none;
+	width: 175px;
+	
+	margin-right: 20px
+}
